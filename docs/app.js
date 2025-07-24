@@ -179,6 +179,22 @@ function confettiBurst() {
 }
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.cta-main').forEach(btn => {
-    btn.addEventListener('click', confettiBurst);
+    btn.addEventListener('click', function(e) {
+      // Cek apakah elemen yang diklik adalah sebuah tautan (tag <a>)
+      const link = e.currentTarget.closest('a');
+      
+      // Selalu jalankan animasi confetti
+      confettiBurst();
+
+      // Jika ini adalah tautan dan memiliki href, tunda navigasi
+      if (link && link.href) {
+        e.preventDefault(); // Mencegah browser mengikuti tautan secara langsung
+        
+        // Tunggu 500ms sebelum membuka tautan agar animasi sempat terlihat
+        setTimeout(() => {
+          window.open(link.href, link.target || '_self');
+        }, 500);
+      }
+    });
   });
-}); 
+});
