@@ -9,16 +9,21 @@
   <meta name="theme-color" content="#E94E89">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="app.js" defer></script>
-  <link rel="icon" type="image/png" href="Happy.png">
+  <link rel="icon" type="image/png" href="Assets/Kucheng.png">
 </head>
 <body>
   <!-- Splash Screen Clara -->
   <div id="splash-clara">
-    <img src="Clara.png" alt="Clara Logo" class="clara-splash-img" />
+    <a href="http://clara-app-rust.vercel.app">
+      <img src="Assets/Clara.png" alt="Clara Logo" class="clara-splash-img" />
+    </a>
   </div>
   <header class="clara-header">
     <div class="container header-flex">
-      <div class="logo-pink">Clara</div>
+      <a href="http://clara-app-rust.vercel.app" style="text-decoration: none;">
+        <div class="logo-pink">Clara</div>
+      </a>
+      <a class="cta-header" href="https://drive.google.com/file/d/1dPziyeFBs1b0ko47D5Vd2OwYF-M7Ofdn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Pelajari Lebih Lanjut</a>
     </div>
   </header>
 
@@ -28,10 +33,11 @@
       <div class="hero-left">
         <h1 class="hero-title">Majukan UMKM Anda<br>Bersama <span class="highlight">Clara</span></h1>
         <p class="hero-desc">Clara adalah asisten AI cerdas yang dirancang khusus untuk membantu pemilik UMKM mengelola bisnis dengan lebih efisien, dari pencatatan keuangan, prediksi penjualan, analisis data, prediksi tren, hingga interaksi chat AI untuk pengambilan keputusan yang lebih baik.</p>
-        <a class="cta-main" href="https://drive.google.com/file/d/1dPziyeFBs1b0ko47D5Vd2OwYF-M7Ofdn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Pelajari Lebih Lanjut</a>
       </div>
       <div class="hero-right">
-        <img src="Clara.png" alt="Clara AI Assistant" style="width: 480px;">
+        <a href="http://clara-app-rust.vercel.app">
+          <img src="Assets/Clara.png" alt="Clara AI Assistant" style="width: 280px;">
+        </a>
       </div>
     </section>
 
@@ -66,16 +72,28 @@
     <!-- WHY SECTION -->
     <section class="why-section container">
       <div class="why-img">
-        <img src="Clara-Mobile.png" alt="Clara on Mobile" style="width: 320px; border-radius: 1.2rem; box-shadow: var(--pink-shadow);">
+        <img src="Assets/Clara-Mobile.png" alt="Clara on Mobile" class="why-main-img">
+        <div class="why-thumbnails">
+          <img src="Catatan Keuangan.jpg" alt="Catatan Keuangan" class="why-thumbnail-img">
+          <img src="Profile Halaman.jpg" alt="Profile Halaman" class="why-thumbnail-img">
+          <img src="Rencana Peminjaman.jpg" alt="Rencana Peminjaman" class="why-thumbnail-img">
+          <img src="Saran Keuangan.jpg" alt="Saran Keuangan" class="why-thumbnail-img">
+          <img src="Analisis Grafik.jpg" alt="Analisis Grafik" class="why-thumbnail-img">
+          <img src="Assets/Clara-Mobile.png" alt="Clara Mobile" class="why-thumbnail-img">
+        </div>
       </div>
       <div class="why-content">
         <h2 class="section-title">Alasan Kenapa Clara Lebih Bagus?</h2>
         <ul class="why-list">
-          <li>➔ Dibuat khusus untuk UMKM Indonesia, mengerti tantangan dan kebutuhan lokal.</li>
-          <li>➔ Integrasi AI yang canggih namun mudah digunakan, tanpa perlu keahlian teknis.</li>
-          <li>➔ Visualisasi data yang intuitif membantu Anda memahami angka dengan cepat.</li>
+          <li><strong>Dibuat Khusus untuk Pelaku Ekonomi Informal Indonesia:</strong> Clara dirancang dari awal untuk memahami dan menjawab tantangan unik yang dihadapi oleh UMKM informal, seperti pemilik warung kelontong. Aplikasi ini fokus pada kebutuhan lokal, bukan sekadar solusi umum.</li>
+          <li><strong>Mengubah Percakapan Harian Menjadi Data Keuangan:</strong> Inovasi utama Clara adalah kemampuannya menerjemahkan percakapan bisnis sehari-hari—seperti "Pak Budi ngutang rokok sebungkus"—menjadi catatan keuangan yang terstruktur dan dapat diverifikasi oleh bank.</li>
+          <li><strong>Integrasi AI yang Canggih Namun Mudah Digunakan:</strong> Melalui desain voice-first, pengguna cukup berbicara ke ponsel mereka untuk mencatat transaksi. Ini menghilangkan hambatan literasi digital dan tidak memerlukan keahlian teknis atau pemahaman akuntansi yang rumit.</li>
+          <li><strong>Membangun "Trust Score" untuk Akses Permodalan:</strong> Clara tidak hanya mencatat, tetapi juga menganalisis data keuangan untuk menghasilkan "Trust Score" dinamis. Skor ini memberikan gambaran kelayakan finansial yang lebih adil bagi lembaga keuangan untuk menilai potensi bisnis Anda, sehingga membuka pintu akses ke pinjaman modal.</li>
+          <li><strong>Asisten AI yang Empatik dan Humanis:</strong> Interaksi dilakukan dengan persona AI bernama Clara yang dirancang untuk sabar, ramah, dan menggunakan bahasa sederhana. Hal ini membuat teknologi terasa seperti mitra yang membantu, bukan aplikasi yang kaku.</li>
         </ul>
-        <a class="cta-main" href="http://clara-app-rust.vercel.app" target="_blank" rel="noopener noreferrer">Ayo Coba Clara!!!</a>
+        <div style="text-align: center;">
+          <a class="cta-main" href="http://clara-app-rust.vercel.app" target="_blank" rel="noopener noreferrer">Ayo Coba Clara!!!</a>
+        </div>
       </div>
     </section>
 
@@ -85,43 +103,28 @@
         <h2 class="section-title">Tim Kami</h2>
         <div class="team-cards">
           <div class="team-card">
-            <img src="Renisa.png" alt="Team Member Renisa" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
+            <img src="Assets/Renisa.png" alt="Team Member Renisa" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
             <div class="team-name">Renisa Assyifa Putri</div>
-            <form class="team-form">
-              <label>Institusi</label>
-              <input type="text" value="Telkom University PURWOKERTO" readonly>
-              <label>Email</label> 
-              <input type="email" value="putrirenisa@gmail.com" readonly>
-              <label>Pesan</label>
-              <input type="text" placeholder="Pesan">
-              <button type="submit" class="cta-main">Kirim Pesan</button>
-            </form>
+            <div class="team-info">
+              <p><strong>Institusi:</strong> Telkom University Purwokerto</p>
+              <p><strong>Email:</strong> putrirenisa@gmail.com</p>
+            </div>
           </div>
           <div class="team-card">
-            <img src="Arkaan.png" alt="Team Member Arkaan" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
+            <img src="Assets/Arkaan.png" alt="Team Member Arkaan" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
             <div class="team-name">Arkaan Wisnu Pratama</div>
-            <form class="team-form">
-              <label>Institusi</label>
-              <input type="text" value="Telkom University PURWOKERTO" readonly>
-              <label>Email</label>
-              <input type="email" value="arkaanpratama909@gmail.com" readonly>
-              <label>Pesan</label>
-              <input type="text" placeholder="Pesan">
-              <button type="submit" class="cta-main">Kirim Pesan</button>
-            </form>
+            <div class="team-info">
+              <p><strong>Institusi:</strong> Telkom University Purwokerto</p>
+              <p><strong>Email:</strong> arkaanpratama909@gmail.com</p>
+            </div>
           </div>
           <div class="team-card">
-            <img src="Hanif.png" alt="Team Member Hanif" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
+            <img src="Assets/Hanif.png" alt="Team Member Hanif" class="team-photo-placeholder" style="height: 160px; width: 90px; object-fit: cover; border-radius: 1.1rem;">
             <div class="team-name">M.HANIF AL FAIZ</div>
-            <form class="team-form">
-              <label>Institusi</label>
-              <input type="text" value="Telkom University PURWOKERTO" readonly>
-              <label>Email</label>
-              <input type="email" value="stshfaiz@gmail.com" readonly>
-              <label>Pesan</label>
-              <input type="text" placeholder="Pesan">
-              <button type="submit" class="cta-main">Kirim Pesan</button>
-            </form>
+            <div class="team-info">
+              <p><strong>Institusi:</strong> Telkom University Purwokerto</p>
+              <p><strong>Email:</strong> stshfaiz@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>

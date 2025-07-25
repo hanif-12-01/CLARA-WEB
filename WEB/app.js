@@ -96,6 +96,26 @@ document.addEventListener('DOMContentLoaded', () => {
         var splash = document.getElementById('splash-clara');
         if(splash) splash.style.display = 'none';
     }, 1500);
+
+    // --- Why Section Image Gallery ---
+    const mainImage = document.querySelector('.why-main-img');
+    const thumbnails = document.querySelectorAll('.why-thumbnail-img');
+
+    if (mainImage && thumbnails.length > 0) {
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Set main image src to clicked thumbnail src
+                mainImage.src = this.src;
+
+                // Update active class
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Set the first thumbnail as active by default
+        thumbnails[0].classList.add('active');
+    }
 });
 
 // --- Service Worker Registration (PWA) ---
@@ -181,4 +201,4 @@ window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.cta-main').forEach(btn => {
     btn.addEventListener('click', confettiBurst);
   });
-}); 
+});
